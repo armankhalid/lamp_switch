@@ -211,7 +211,7 @@ class MyCustomClipper extends CustomClipper<Path> {
     this.shadowColor = Colors.yellow,
     this.shadowBlur = 10.0,
   });
-
+//
   @override
   Path getClip(Size size) {
     var path = Path();
