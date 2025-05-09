@@ -23,6 +23,10 @@ jobs:
         with:
           channel: 'stable'
           architecture: x64
+      - name: Flutter Doctor
+        run: flutter doctor
+      - name: Install Dependencies
+        run: flutter pub get
 
       - run: flutter build apk --release --split-per-abi
       - run: |
